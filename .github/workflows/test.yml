@@ -1,0 +1,23 @@
+name: Pong Demo
+
+on:
+
+  repository_dispatch:
+
+    types: [ping]
+
+ 
+
+jobs:
+
+  ping-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Acknowleding First REPO's Ping
+
+        run: |
+
+           echo "Ping  recieved: "
